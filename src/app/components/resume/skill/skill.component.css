@@ -1,0 +1,23 @@
+.skill-h3{
+    margin: 0px;
+}
+.text-bg-dark{
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border:none;
+    background-color: #212428 ;
+}
+.text-bg-dark:hover{
+    transform: scale(1.05);
+    cursor: pointer; 
+    background-color:#2e3338 ;
+
+}
+.svg-icon{
+    width: 6vh;
+    height: auto;
+}
+.svg-icon-xl{
+    width: 10vh;
+    height: auto;
+}

@@ -22,12 +22,30 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/css/vendor/bootstrap.min.css",
+              "src/assets/css/vendor/slick.css",
+              "src/assets/css/vendor/slick-theme.css",
+              "src/assets/css/vendor/aos.css",
+              "src/assets/css/plugins/feature.css",
+              "src/assets/css/style.css"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/feather.min.js",
+              "src/assets/js/vendor/jquery.js",
+              "src/assets/js/vendor/modernizer.min.js",
+              "src/assets/js/vendor/slick.min.js",
+              "src/assets/js/vendor/bootstrap.js",
+              "src/assets/js/vendor/text-type.js",
+              "src/assets/js/vendor/wow.js",
+              "src/assets/js/vendor/aos.js",
+              "src/assets/js/vendor/particles.js",
+              "src/assets/js/vendor/jquery-one-page-nav.js",
+              "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {

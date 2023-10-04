@@ -1,0 +1,13 @@
+.card{
+    background-color: #212428;
+    color:#c4cfde ;
+}
+.card > ul > li {
+    background-color: #212428;
+    color:#c4cfde ;
+    list-style-type: disc;
+    border: none;
+}
+.list-group-item{
+    margin: 5px 0px;
+}

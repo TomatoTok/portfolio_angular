@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
+  buttonText : string = "Ver más";
+  /**
+ * Esta función cambia el "Ver más" a "Ver menos"
+ */
+  changeSeeAll(){
+    this.buttonText = "";
+  }
 
 }

@@ -7514,7 +7514,7 @@ textarea:-ms-input-placeholder {
   opacity: 1;
 }
 
-/*------------------------------
+/* ------------------------------
     Scroll Up 
 --------------------------------*/
 #scrollUp {
@@ -14350,7 +14350,7 @@ div#featured-project-carousel {
   }
 }
 .rn-nav-list .nav-item {
-  flex-basis: 25%;
+  flex-basis: 33.3%;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;

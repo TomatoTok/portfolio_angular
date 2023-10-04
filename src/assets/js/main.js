@@ -98,7 +98,7 @@
             $(document).on('click', '.smoth-animation', function (event) {
                 event.preventDefault();
                 $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - 50
+                    scrollTop: $($.attr(this, 'href')).offset().top - 500
                 }, 300);
             });
         },
@@ -107,7 +107,7 @@
             $(document).on('click', '.smoth-animation-two', function (event) {
                 event.preventDefault();
                 $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - 0
+                    scrollTop: $($.attr(this, 'href')).offset().top - 500
                 }, 300);
             });
         },

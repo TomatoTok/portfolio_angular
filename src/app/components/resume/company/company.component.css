@@ -1,0 +1,29 @@
+.company-h3 {
+    margin: 0px;
+    font-size: 2rem;
+}
+
+.text-bg-dark {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border: none;
+    background-color: transparent;
+}
+
+.text-bg-dark:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.img {
+    max-width: 25vh;
+    width: 100%;
+    height: auto;
+}
+.img-xl {
+    max-width: 13vh;
+    /* width: 100%; */
+    padding: 0px;
+    margin:0px;
+    /* height: auto; */
+}

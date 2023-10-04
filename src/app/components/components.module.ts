@@ -4,10 +4,11 @@ import { BioComponent } from './bio/bio.component';
 import { SliderComponent } from './slider/slider.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
-import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NewsComponent } from './news/news.component';
 import { ModalsComponent } from './modals/modals.component';
+import { CardComponent } from './experience/card/card.component';
+import { ResumeModule } from './resume/resume.module';
 
 
 
@@ -17,13 +18,13 @@ import { ModalsComponent } from './modals/modals.component';
     SliderComponent,
     ExperienceComponent,
     EducationComponent,
-    ResumeComponent,
     PortfolioComponent,
     NewsComponent,
-    ModalsComponent
+    ModalsComponent,
+    CardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,ResumeModule
   ],
 exports: [
   BioComponent,
