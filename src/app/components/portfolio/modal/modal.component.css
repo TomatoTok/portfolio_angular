@@ -1,0 +1,17 @@
+@media (min: 800px) {
+  .modal .modal-dialog {
+    max-width: 75% !important;
+  }
+}
+
+.modal .modal-dialog {
+  max-width: 95% !important;
+}
+.carousel-inner {
+  padding: 0px !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  padding: 0px !important;
+  box-shadow: none !important;
+}

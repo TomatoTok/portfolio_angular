@@ -1,0 +1,12 @@
+.preview {
+  height: 25vh !important;
+  object-fit: cover;
+}
+.rn-portfolio-slick,
+.adjust {
+  height: 100%;
+  min-width: 100% !important;
+}
+.rn-portfolio {
+  cursor: pointer;
+}

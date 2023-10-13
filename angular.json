@@ -34,9 +34,9 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/feather.min.js",
               "src/assets/js/vendor/jquery.js",
               "src/assets/js/vendor/modernizer.min.js",
+              "src/assets/js/vendor/feather.min.js",
               "src/assets/js/vendor/slick.min.js",
               "src/assets/js/vendor/bootstrap.js",
               "src/assets/js/vendor/text-type.js",

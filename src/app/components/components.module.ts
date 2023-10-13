@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { CommonModule } from '@angular/common';
 import { BioComponent } from './bio/bio.component';
 import { SliderComponent } from './slider/slider.component';
@@ -9,7 +10,8 @@ import { NewsComponent } from './news/news.component';
 import { ModalsComponent } from './modals/modals.component';
 import { CardComponent } from './experience/card/card.component';
 import { ResumeModule } from './resume/resume.module';
-
+import { SingleProyectComponent } from './portfolio/single-proyect/single-proyect.component';
+import { ModalComponent } from './portfolio/modal/modal.component';
 
 
 @NgModule({
@@ -21,10 +23,12 @@ import { ResumeModule } from './resume/resume.module';
     PortfolioComponent,
     NewsComponent,
     ModalsComponent,
-    CardComponent
+    CardComponent,
+    SingleProyectComponent,
+    ModalComponent
   ],
   imports: [
-    CommonModule,ResumeModule
+    CommonModule,ResumeModule,
   ],
 exports: [
   BioComponent,
