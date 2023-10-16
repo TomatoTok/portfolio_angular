@@ -1,0 +1,150 @@
+<!-- Modal Blog Body area Start -->
+<div
+  class="modal fade"
+  id="{{ id }}"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-news" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"><i data-feather="x"></i></span>
+        </button>
+      </div>
+
+      <!-- End of .modal-header -->
+
+      <div class="modal-body">
+        <img
+          src="assets/images/blog/blog-big-01.jpg"
+          alt="news modal"
+          class="img-fluid modal-feat-img"
+        />
+        <div class="news-details">
+          <h2 class="title">{{ title }}</h2>
+          <ng-container *ngIf="type_1">
+            <p>
+              Además de disfrutar jugar videojuegos admiro mucho su arte,
+              diseño, música y logica de programación. Soy muy curioso en "¿Cómo
+              lograron eso?" e investigo, leo y aprendo al respecto. Busco a los
+              desarrolladores, la empresa y los retos que tuvieron que cruzar
+              para lograr el objetivo final.
+            </p>
+            <p>Es otra forma de jugar</p>
+            <h4>Control de todo</h4>
+            <p>
+              En la programación de un videojuego hay que tener en cuenta los
+              mismos aspectos que en el cine o incluso más. Si pensamos en una
+              historia y luego la queremos volcar en un juego hay que tener en
+              cuenta el entorno, su estilo, su arte, incluso sus leyes naturales
+              como "¿la fisicas seran iguales a las que nostros tenemos o
+              cambian?" desde su gravedad hasta el formato de su flora y fauna.
+            </p>
+            <h4>Hasta el detalle</h4>
+            <p>
+              Detalles como si el personaje principal va a tener compañeros o si
+              puede escalar las paredes alteran en gran medida el gameplay del
+              juego, lo que hace que cada detalle tiene que ser previsto o
+              analizar su impacto en el producto final.
+            </p>
+            <h4>Transmitir</h4>
+            <p>
+              Los videojuegos se han vuelto demasiado popular no solo por ser
+              divertidos sino por las historias que cuentan o lo que transmiten.
+              Las sensaciones de ganar, competir, la cooperación, y las
+              sensaciones que puedan transmitir (miedo, risa, adrenalina) son
+              todas obra del director y equipo de desarrollo del juego. Lo que
+              más me gusta del desarrollo de videojuegos es poder trasnmitir
+              emociones o sensaciones al usuario final.
+            </p>
+          </ng-container>
+          <ng-container *ngIf="type_2">
+            <p>
+              De alguna forma todos somos amantes de la música. Me gusta
+              analizar la musica de varias perspectivas, me gusta cuando
+              transmiten emociones que no a todos les llega y se vuelve algo
+              personal.
+            </p>
+            <h4>Observación personal</h4>
+            <p>
+              Como músico disfruto las composiciones y desarrollo de los
+              artistas para crear sentimientos basados en un conjunto de acordes
+              o frecuencias. Logran combinar sonidos que a uno le resultan
+              placenteros mezclados con letras que a veces reflejan lo que uno
+              siente.
+            </p>
+            <h4>Genero preferido</h4>
+            <p>
+              No tengo género preferido, rock, pop, punk, metal, trap, rap, etc,
+              escucho musica en multiples idiomas (Ingles, Español, Coreano,
+              Japones, Frances, etc.), lo cual permite entender mejor a
+              distintas culturas.
+            </p>
+          </ng-container>
+          <ng-container *ngIf="type_3">
+            <p>
+              Desde hace mucho tiempo que hay un estereotipo del informatico que
+              no sale de casa, que permanece encerrado en su computadora, sin
+              actividades sociales o tener muchas amistades. Con el tiempo eso
+              está cambiando y el informatico pasa a ser un ser mas sociable.
+              Pero ese estereotipo no es mi estilo, soy muy sociable.
+            </p>
+            <h4>¿Qué me gusta hacer?</h4>
+            <p>
+              Disfruto mucho juntarme con amigos a comer, bailar, pasear, ir al
+              rio, etc. Tambien me gusta disfrutar de un café sólo y tiempo para
+              mí o recorrer malls, shoppings, tiendas de ropa o de tecnología
+              aunque no me compre nada.
+            </p>
+            <h4>Mi forma de ser</h4>
+            <p>
+              Soy bastante sociable y empático con las personas, eso no quiere
+              decir que sea el mejor pero es cierto que ser sociable abre
+              puertas y las relaciones personales las suelo llevar muy bien lo
+              cual me facilita el trato con las personas en oficinas,
+              universidad y amistades.
+            </p>
+          </ng-container>
+        </div>
+
+        <!-- Comment Section Area Start -->
+        <div class="comment-inner">
+          <h3 class="title mb--40 mt--50">Leave a Reply</h3>
+          <form action="#">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-12">
+                <div class="rnform-group">
+                  <input type="text" placeholder="Name" />
+                </div>
+                <div class="rnform-group">
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div class="rnform-group">
+                  <input type="text" placeholder="Website" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-12">
+                <div class="rnform-group">
+                  <textarea placeholder="Comment"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <a class="rn-btn" href="#"><span>SUBMIT NOW</span></a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Comment Section End -->
+      </div>
+      <!-- End of .modal-body -->
+    </div>
+  </div>
+</div>
+<!-- End Modal Blog area -->

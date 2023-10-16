@@ -12,6 +12,8 @@ import { CardComponent } from './experience/card/card.component';
 import { ResumeModule } from './resume/resume.module';
 import { SingleProyectComponent } from './portfolio/single-proyect/single-proyect.component';
 import { ModalComponent } from './portfolio/modal/modal.component';
+import { BlogModalComponent } from './news/blog-modal/blog-modal.component';
+
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { ModalComponent } from './portfolio/modal/modal.component';
     ModalsComponent,
     CardComponent,
     SingleProyectComponent,
-    ModalComponent
+    ModalComponent,
+    BlogModalComponent
   ],
   imports: [
     CommonModule,ResumeModule,
