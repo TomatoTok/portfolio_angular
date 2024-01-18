@@ -4,7 +4,7 @@
         <div class="card-body">
             <div class="row d-flex justify-content-center text-center" title="{{skill_name}}">
                 <div class="col-3 d-flex align-item-center">
-                    <img class="{{type_img}}" src="{{img}}" alt="{{skill_name}} icon" srcset="">
+                    <img class="{{type_img}}" [ngSrc]="img" [width]="100" [height]="100" alt="{{skill_name}} icon" srcset="">
                 </div>
                 <div class="col-9 text-start">
                     <h4 class="skill-h3">{{skill_name}}</h4>

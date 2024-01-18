@@ -11,3 +11,10 @@
 .list-group-item{
     margin: 5px 0px;
 }
+img{
+    max-height: 200px;
+    min-width: 250px;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}

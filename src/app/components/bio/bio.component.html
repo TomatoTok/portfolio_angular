@@ -1,17 +1,18 @@
-<main class="main-page-wrapper container" >
-
-    <app-slider></app-slider>
-    <!-- <app-education></app-education> -->
-    <app-resume></app-resume>
-    <app-portfolio></app-portfolio>
-    <app-experience></app-experience>
-    <app-news></app-news>
-    <app-modals></app-modals>
-    <!-- Back to  top Start -->
-    <div class="backto-top">
-        <div>
-            <i data-feather="arrow-up"></i>
-        </div>
+<main class="main-page-wrapper container">
+  <app-slider></app-slider>
+  <!-- <app-education></app-education> -->
+  <app-resume></app-resume>
+  <app-portfolio></app-portfolio>
+  <app-experience></app-experience>
+  <app-news></app-news>
+  <app-modals></app-modals>
+  <!-- Back to  top Start -->
+  <a >
+    <div id="backto-top" (click)="scrollToTop()" class="backto-top">
+      <div scrollToTop>
+        <i data-feather="arrow-up"></i>
+      </div>
     </div>
-    <!-- Back to top end -->
+  </a>
+  <!-- Back to top end -->
 </main>

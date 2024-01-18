@@ -15,13 +15,13 @@
                                 <div id="{{id}}_carousel" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
-                                        <img src="{{img}}" class="d-block w-100" alt="...">
+                                        <img [ngSrc]="img" [width]="100" [height]="100" class="d-block w-100" alt="...">
                                       </div>
                                       <div class="carousel-item" *ngIf="second_img">
-                                        <img src="{{second_img}}" class="d-block w-100" alt="...">
+                                        <img [ngSrc]="second_img" [width]="100" [height]="100" class="d-block w-100" alt="...">
                                       </div>
                                       <div class="carousel-item" *ngIf="thirth_img">
-                                        <img src="{{thirth_img}}" class="d-block w-100" alt="...">
+                                        <img [ngSrc]="thirth_img" [width]="100" [height]="100" class="d-block w-100" alt="...">
                                       </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#'+id+'_carousel'" data-bs-slide="prev" *ngIf="second_img">

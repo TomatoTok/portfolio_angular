@@ -1,0 +1,10 @@
+.rn-btn{
+cursor: pointer;
+}
+#contact{
+    z-index: 3500!important;
+}
+
+.notiflix-confirm .notiflix-confirm-action {
+    color: blue!important;
+  }

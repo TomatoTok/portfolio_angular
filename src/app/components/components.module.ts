@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { BioComponent } from './bio/bio.component';
 import { SliderComponent } from './slider/slider.component';
 import { ExperienceComponent } from './experience/experience.component';
@@ -13,8 +14,7 @@ import { ResumeModule } from './resume/resume.module';
 import { SingleProyectComponent } from './portfolio/single-proyect/single-proyect.component';
 import { ModalComponent } from './portfolio/modal/modal.component';
 import { BlogModalComponent } from './news/blog-modal/blog-modal.component';
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,15 +28,17 @@ import { BlogModalComponent } from './news/blog-modal/blog-modal.component';
     CardComponent,
     SingleProyectComponent,
     ModalComponent,
-    BlogModalComponent
+    BlogModalComponent,
   ],
   imports: [
-    CommonModule,ResumeModule,
+    NgOptimizedImage,
+    CommonModule,
+    ResumeModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-exports: [
-  BioComponent,
-  SliderComponent,
-  ExperienceComponent
-]
+  exports: [BioComponent, SliderComponent, ExperienceComponent],
+  providers: [],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}
