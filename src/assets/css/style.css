@@ -13058,6 +13058,7 @@ figcaption {
 }
 .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top {
   padding: 35px;
+  min-height: 530px;
   background: var(--background-color-2);
   box-shadow: var(--shadow-1);
   border-radius: 10px 10px 0 0;
@@ -13156,7 +13157,7 @@ figcaption {
 .slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom {
   border-radius: 0 0 10px 10px;
   margin-top: 30px;
-  padding: 35px;
+  padding: 30px;
   box-shadow: var(--shadow-1);
 }
 @media only screen and (max-width: 479px) {

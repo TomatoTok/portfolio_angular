@@ -1,0 +1,73 @@
+    <!-- Modal Portfolio Body area Start -->
+    <div class="modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i data-feather="x"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-7" style="padding: 0px;">
+                            <div class="portfolio-popup-thumbnail">
+                                <div id="{{id}}_carousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <video  [width]="600" [height]="350" controls loop muted style="border-radius: 15px;">
+                                            <source [src]="vid" type="video/mp4">
+                                            Tu navegador no soporta la reproducción de video.
+                                        </video>
+                                      <!-- <div class="carousel-item active">
+                                        <img [src]="img" [width]="100" [height]="100" class="d-block w-100" alt="...">
+                                      </div> -->
+                                      <div class="carousel-item" *ngIf="second_img">
+                                        <img [src]="second_img" [width]="100" [height]="100" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item" *ngIf="thirth_img">
+                                        <img [src]="thirth_img" [width]="100" [height]="100" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#'+id+'_carousel'" data-bs-slide="prev" *ngIf="second_img">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#'+id+'_carousel'" data-bs-slide="next" *ngIf="second_img">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="text-content">
+                                <h3>
+                                    <span>{{type}}</span> {{title}}.
+                                </h3>
+                                <p class="mb--30">{{first_text}}</p>
+                                <p>{{second_text}}</p>
+                                <div class="" *ngIf="!has_links;">
+                                    <hr>
+                                    <p>{{no_link_text}}</p>
+                                </div>
+                                <div class="button-group mt--20" *ngIf="has_links;">
+                                    <a href="{{github_link}}" target="_blank" class="rn-btn thumbs-icon">
+                                        <span>GitHub Repository </span>
+                                        <i data-feather="thumbs-up"></i>
+                                    </a>
+                                    <a href="{{page_link}}" target="_blank" class="rn-btn" *ngIf="has_a_web">
+                                        <span>Pagina Web</span>
+                                        <i data-feather="chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End of .text-content -->
+                        </div>
+                    </div>
+                    <!-- End of .row Body-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Portfolio area -->
