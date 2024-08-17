@@ -8,7 +8,7 @@
     <div class="col-lg-2 col-6">
       <div class="header-left">
         <div class="logo">
-          <h5><span class="primary-menu">tomato</span></h5>
+          <h5><span class="primary-menu" style="margin-left:20px ;">Tomato</span></h5>
           <!-- <a href="index.html">
                         <img src="assets/images/logo/logo.png" alt="logo">
                     </a> -->
@@ -19,9 +19,43 @@
     <!-- Start Header Center -->
     <div class="col-lg-10 col-6">
       <div class="header-center">
+        <div #mySideNav class="own-sidenav">
+          <a href="javascript:void(0)" class="close
+          btn" (click)="closeNav()">&times;</a>
+          <ul class="primary-menu nav nav-pills">
+            <li class="nav-item current">
+              <a class="nav-link smoth-animation active" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#resume">Resumen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#resume">Educacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#experiences"
+                >Trayectoria</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#footer"
+                >Pie de Página</a
+              >
+            </li>
+          </ul>
+        </div>
+       
         <nav
           id="sideNav"
-          class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav"
+          class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav" 
         >
           <!-- Start Mainmanu Nav -->
           <ul class="primary-menu nav nav-pills">
@@ -58,7 +92,7 @@
         <!-- Start Header Right  -->
         <div class="header-right">
           <div class="hamberger-menu d-block d-xl-none">
-            <i id="menuBtn" class="feather-menu humberger-menu"></i>
+            <i id="menuBtn" class="feather-menu humberger-menu" (click)="openNav()"></i>
           </div>
 
           <div class="close-menu d-block">

@@ -213,6 +213,8 @@
           ></app-modal>
         </div>
       </div>
+    </div>
+    <div class="row mt--25 mt_md--5 mt_sm--5">
       <div class="row mt-5 pt-5">
         <div class="col-lg-12">
           <div
@@ -253,56 +255,57 @@
                     data-bs-toggle="modal"
                     data-bs-target="#ModalEight"
                   >
-                    <app-video-project
-                      [category]="'Godot Engine'"
-                      [title]="'Plataformas'"
+                  <app-single-proyect
+                  [category]="'Godot Engine'"
+                  [title]="'Plataformas'"
+                  [img]="'assets/images/portfolio/game1/img1.png'"
+                ></app-single-proyect>
+                    <app-modal-video
+                      [id]="'ModalEight'"
                       [vid]="'assets/videos/godot-project.mp4'"
-                    ></app-video-project>
-                  <app-modal-video
-                    [id]="'ModalEight'"
-                    [vid]="'assets/videos/godot-project.mp4'"
-                    [img]="'assets/images/portfolio/project5/init.jpg'"
-                    [type]="'Godot Engine'"
-                    [title]="'Proyecto Godot'"
-                    [first_text]="
-                      'Proyecto de videojuego en Godot Engine, motor de videojuegos de código abierto. Juego de plataformas en 2D con mecánicas de salto y plataformeo.'
-                    "
-                    [second_text]="
-                      'Desarrollado en Godot Engine, GDScript, Aseprite'
-                    "
-                    [has_links]="false"
-                    [no_link_text]="
-                      'LINKS: No dispone. Proyecto en desarrollo.'
-                    "
-                  ></app-modal-video>
+                      [img]="'assets/images/portfolio/project5/init.jpg'"
+                      [type]="'Godot Engine'"
+                      [title]="'Proyecto Godot'"
+                      [first_text]="
+                        'Proyecto de videojuego en Godot Engine, motor de videojuegos de código abierto. Juego de plataformas en 2D con mecánicas de salto y plataformeo.'
+                      "
+                      [second_text]="
+                        'Desarrollado en Godot Engine, GDScript, Aseprite'
+                      "
+                      [has_links]="false"
+                      [no_link_text]="
+                        'LINKS: No dispone. Proyecto en desarrollo.'
+                      "
+                    ></app-modal-video>
                   </div>
-                <div
-                  class="col-lg-4 col-md-6 col-sm-12"
-                  data-bs-toggle="modal"
-                  data-bs-target="#ModalNine"
-                >
-                  <app-video-project
-                    [category]="'Unity Engine'"
-                    [title]="'Tetris'"
-                    [vid]="'assets/videos/tetris-unity.mp4'"
-                  ></app-video-project>
-                <app-modal-video
-                  [id]="'ModalNine'"
-                  [vid]="'assets/videos/tetris-unity.mp4'"
-                  [img]="'assets/images/portfolio/project5/init.jpg'"
-                  [type]="'Unity Engine'"
-                  [title]="'Proyecto Unity'"
-                  [first_text]="
-                    'Proyecto de videojuego en Unity Engine. Juego de replica del famoso juego de Tetris.'
-                  "
-                  
-                  [has_links]="false"
-                  [no_link_text]="'LINKS: No dispone. Proyecto en desarrollo.'"
-                ></app-modal-video>
+                  <div
+                    class="col-lg-4 col-md-6 col-sm-12"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ModalNine"
+                  >
+                  <app-single-proyect
+                  [category]="'Unity'"
+                  [title]="'Tetris'"
+                  [img]="'assets/images/portfolio/game2/img1.png'"
+                ></app-single-proyect>
+                    <app-modal-video
+                      [id]="'ModalNine'"
+                      [vid]="'assets/videos/tetris-unity.mp4'"
+                      [img]="'assets/images/portfolio/project5/init.jpg'"
+                      [type]="'Unity Engine'"
+                      [title]="'Proyecto Unity'"
+                      [first_text]="
+                        'Proyecto de videojuego en Unity Engine. Juego de replica del famoso juego de Tetris.'
+                      "
+                      [has_links]="false"
+                      [no_link_text]="
+                        'LINKS: No dispone. Proyecto en desarrollo.'
+                      "
+                    ></app-modal-video>
+                  </div>
                 </div>
               </div>
-                </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>

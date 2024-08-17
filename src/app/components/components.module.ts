@@ -17,6 +17,7 @@ import { BlogModalComponent } from './news/blog-modal/blog-modal.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VideoProjectComponent } from './portfolio/video-project/video-project.component';
 import { ModalVideoComponent } from './portfolio/modal-video/modal-video.component';
+import { AnimationComponent } from './slider/animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ModalVideoComponent } from './portfolio/modal-video/modal-video.compone
     ModalComponent,
     BlogModalComponent,
     VideoProjectComponent,
-    ModalVideoComponent
+    ModalVideoComponent,
+    AnimationComponent
   ],
   imports: [
     NgOptimizedImage,
