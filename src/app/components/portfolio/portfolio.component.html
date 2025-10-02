@@ -1,7 +1,7 @@
 <!-- Start Portfolio Area -->
 <div
   id="portfolio"
-  class="rn-portfolio-area portfolio-style-three rn-section-gap section-separator"
+  class="rn-portfolio-area portfolio-style-three rn-section-gap"
 >
   <div class="container">
     <div class="row">
@@ -14,7 +14,7 @@
           class="section-title text-center"
         >
           <span class="subtitle">Presiona las tarjetas para más detalles</span>
-          <h2 class="title">Mi Portfolio</h2>
+          <h2 class="title">Portfolio</h2>
         </div>
       </div>
     </div>
@@ -28,15 +28,37 @@
           class="portfolio-wrapper portfolio-slick-activation slick-arrow-style-one rn-slick-dot-style"
         >
           <div class="row">
+             <div
+              class="col-lg-4 col-md-6 col-sm-12"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalEleven"
+            >
+              <app-single-proyect
+                [category]="'Portfolio'"
+                [title]="'Portfolio Fotografía'"
+                [img]="'assets/images/portfolio/project11/img1.png'"
+              ></app-single-proyect>
+            </div>
+                        <div
+              class="col-lg-4 col-md-6 col-sm-12"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalTen"
+            >
+              <app-single-proyect
+                [category]="'Sistemas'"
+                [title]="'Sistema de Inventarios'"
+                [img]="'assets/images/portfolio/project10/img1.png'"
+              ></app-single-proyect>
+            </div>
             <div
               class="col-lg-4 col-md-6 col-sm-12"
               data-bs-toggle="modal"
               data-bs-target="#ModalOne"
             >
               <app-single-proyect
-                [title]="'Sistema de análisis estadístico'"
-                [category]="'Estadistico'"
-                [img]="'assets/images/portfolio/project7/init.jpg'"
+                [category]="'Dashboard'"
+                [title]="'Dashboard tipo Admin'"
+                [img]="'assets/images/portfolio/project7/img1.jpg'"
               ></app-single-proyect>
             </div>
             <div
@@ -45,20 +67,9 @@
               data-bs-target="#ModalTwo"
             >
               <app-single-proyect
-                [category]="'Ubicacion Geografica'"
-                [title]="'Geoposicionamiento'"
-                [img]="'assets/images/portfolio/project4/init.jpg'"
-              ></app-single-proyect>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12"
-              data-bs-toggle="modal"
-              data-bs-target="#ModalSeven"
-            >
-              <app-single-proyect
-                [category]="'Web Style'"
-                [title]="'Fan-Page'"
-                [img]="'assets/images/portfolio/project9/img1.png'"
+                [category]="'API'"
+                [title]="'Sistema de posicionamiento regional'"
+                [img]="'assets/images/portfolio/project4/img1.jpg'"
               ></app-single-proyect>
             </div>
             <div
@@ -67,8 +78,8 @@
               data-bs-target="#ModalThree"
             >
               <app-single-proyect
-                [category]="'Java desktop'"
-                [title]="'Gestor UP'"
+                [category]="'GUP'"
+                [title]="'Gestor Usuario Personal'"
                 [img]="'assets/images/portfolio/project1/img1.jpg'"
               ></app-single-proyect>
             </div>
@@ -78,9 +89,9 @@
               data-bs-target="#ModalFour"
             >
               <app-single-proyect
-                [category]="'API Web'"
+                [category]="'Weather API'"
                 [title]="'Web Weather App'"
-                [img]="'assets/images/portfolio/project6/init.jpg'"
+                [img]="'assets/images/portfolio/project6/img1.jpg'"
               ></app-single-proyect>
             </div>
             <div
@@ -89,131 +100,140 @@
               data-bs-target="#ModalFive"
             >
               <app-single-proyect
-                [category]="'API Web'"
-                [title]="'QR generator'"
+                [category]="'QR API'"
+                [title]="'Generador de QR'"
                 [img]="'assets/images/portfolio/project3/img1.jpg'"
               ></app-single-proyect>
             </div>
+
+           
           </div>
           <!-- Start Single Portfolio  -->
-          <app-modal
-            [id]="'ModalOne'"
-            [img]="'assets/images/portfolio/project7/init.jpg'"
-            [second_img]="'assets/images/portfolio/project7/img1.jpg'"
-            [thirth_img]="'assets/images/portfolio/project7/img2.jpg'"
-            [type]="'Dashboard tipo Admin'"
-            [title]="'Sistema de análisis estadístico'"
-            [first_text]="
-              'Sistema avanzado con Framework Codeigniter 4 (PHP) estilo Admin, con Dashboard, Perfil, Login, Graficos estadistico, Base de Datos y más. Modelo base para múltiples tipos de sistemas estadísticos y analíticos.'
-            "
-            [second_text]="
-              'Desarrollado en HTML5, CSS3, JS, PHP, MySQL, Codeigniter 4, Bootstrap 5'
-            "
-            [github_link]="'https://github.com/TomatoTok/adminDashboard'"
-            [page_link]="'https://tomatotok.github.io/adminDashboard/'"
-            [has_a_web]="true"
-          ></app-modal>
-
-          <app-modal
-            [id]="'ModalTwo'"
-            [img]="'assets/images/portfolio/project4/init.jpg'"
-            [second_img]="'assets/images/portfolio/project4/img1.jpg'"
-            [type]="'Geoposicionamiento'"
-            [title]="'Sistema de posicionamiento regional'"
-            [first_text]="
-              'Sistema creado para una empresa de gestion de locaciones basado en coordenadas geográficas. Mapa interactivo con notificaciones y dashboard tipo admin incluido. Motor en JS y Google Maps API'
-            "
-            [second_text]="
-              'Desarrollado en HTML5, CSS3, JS, PHP, MySQL, Codeigniter 4, Bootstrap 5, GoogleApi'
-            "
-            [has_links]="false"
-            [no_link_text]="
-              'LINKS: No dispone. Sistema diseñado para una empresa particular.'
-            "
-          ></app-modal>
-
-          <app-modal
-            [id]="'ModalThree'"
-            [img]="'assets/images/portfolio/project1/img1.jpg'"
-            [second_img]="'assets/images/portfolio/project1/img2.jpg'"
-            [thirth_img]="'assets/images/portfolio/project1/img3.jpg'"
-            [type]="'Java desktop App'"
-            [title]="'Gestor Usuario Personal'"
-            [first_text]="
-              'Se trata de un programa diseñado en Java para almacenar toda la información sobre cuentas, correos, usuarios, contraseñas, y otra información personal. '
-            "
-            [second_text]="
-              'Pensado en una base de datos local generada en LOG o TXT con cifrado doble para su maxima proteccion. Desarrollado en Java, NetbBeans, JDK, JFrame'
-            "
-            [github_link]="'https://github.com/TomatoTok/Gup'"
-            [page_link]="'https://codepen.io/tomatotok/full/abWZeee'"
-            [has_a_web]="true"
-          ></app-modal>
-
-          <app-modal
-            [id]="'ModalFour'"
-            [img]="'assets/images/portfolio/project6/img1.jpg'"
-            [second_img]="'assets/images/portfolio/project6/init.jpg'"
-            [type]="'Weather API'"
-            [title]="'Aplicacion Web del Clima'"
-            [first_text]="
-              'Pagina simple con motor JS y WeatherAPI para ver el clima en tu localidad. (es necesario permitir la ubicación)'
-            "
-            [second_text]="'Desarrollado con HTML5, CSS3, JS, WeatherAPI'"
-            [github_link]="'https://github.com/TomatoTok/climapp'"
-            [page_link]="'https://tomatotok.github.io/climapp/'"
-            [has_a_web]="true"
-          ></app-modal>
-
-          <app-modal
-            [id]="'ModalFive'"
-            [img]="'assets/images/portfolio/project3/img1.jpg'"
-            [second_img]="'assets/images/portfolio/project3/init.jpg'"
-            [type]="'QR API'"
-            [title]="'Generador de QR'"
-            [first_text]="
-              'Generador de QR con motor JS, permite crear cualquier tipo de texto a un QR tanto como una url como una frase o cadena de caracteres.'
-            "
-            [second_text]="'Desarrollado con HTML5, CSS3, JS, QR-web-API'"
-            [github_link]="'https://github.com/TomatoTok/qr-generator'"
-            [page_link]="'https://tomatotok.github.io/qr-generator/'"
-            [has_a_web]="true"
-          ></app-modal>
-          <app-modal
-            [id]="'ModalSix'"
-            [img]="'assets/images/portfolio/project8/init.jpg'"
-            [second_img]="'assets/images/portfolio/project8/img3.jpg'"
-            [thirth_img]="'assets/images/portfolio/project8/img2.jpg'"
-            [type]="'Games'"
-            [title]="'Proyecto Café'"
-            [first_text]="
-              'Juego de historia lineal basado en RPGMaker (Motor JavaScript). Proyecto de 6 meses de elaboración, duración del gameplay apróx 1hr a 2hrs.'
-            "
-            [second_text]="
-              'Desarrollado en RPG Maker Studio, JavaScript, Maker Interface'
-            "
-            [has_links]="false"
-            [no_link_text]="
-              'LINKS: No dispone. RPG Maker tiene conflictos para exportar una demo estable.'
-            "
-          ></app-modal>
-          <app-modal
-            [id]="'ModalSeven'"
-            [img]="'assets/images/portfolio/project9/img2.png'"
-            [second_img]="'assets/images/portfolio/project9/img3.png'"
-            [type]="'Fan-Page'"
-            [title]="'Shoji Meguro FP'"
-            [first_text]="
-              'Shoji Meguro & Persona Fan Page, dedicada a uno de mis referentes y una de las sagas de juegos favoritas, creado para practicar JS y CSS, estilo y diseño propio'
-            "
-            [second_text]="'Desarrollado con HTML5, CSS3, JS'"
-            [github_link]="'https://github.com/TomatoTok/shoji-meguro-fp'"
-            [page_link]="'https://tomatotok.github.io/shoji-meguro-fp/'"
-            [has_a_web]="true"
-          ></app-modal>
         </div>
       </div>
     </div>
+    
+    <!-- Modals Section -->
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Portfolio Modals -->
+        <app-modal
+          [id]="'ModalOne'"
+          [img]="'assets/images/portfolio/project7/init.jpg'"
+          [second_img]="'assets/images/portfolio/project7/img1.jpg'"
+          [thirth_img]="'assets/images/portfolio/project7/img2.jpg'"
+          [type]="'Dashboard tipo Admin'"
+          [title]="'Sistema de análisis estadístico'"
+          [first_text]="
+            'Sistema avanzado con Framework Codeigniter 4 (PHP) estilo Admin, con Dashboard, Perfil, Login, Graficos estadistico, Base de Datos y más. Modelo base para múltiples tipos de sistemas estadísticos y analíticos.'
+          "
+          [second_text]="
+            'Desarrollado en HTML5, CSS3, JS, PHP, MySQL, Codeigniter 4, Bootstrap 5'
+          "
+          [github_link]="'https://github.com/TomatoTok/adminDashboard'"
+          [page_link]="'https://tomatotok.github.io/adminDashboard/'"
+          [has_a_web]="true"
+        ></app-modal>
+
+        <app-modal
+          [id]="'ModalTwo'"
+          [img]="'assets/images/portfolio/project4/init.jpg'"
+          [second_img]="'assets/images/portfolio/project4/img1.jpg'"
+          [type]="'Geoposicionamiento'"
+          [title]="'Sistema de posicionamiento regional'"
+          [first_text]="
+            'Sistema creado para una empresa de gestion de locaciones basado en coordenadas geográficas. Mapa interactivo con notificaciones y dashboard tipo admin incluido. Motor en JS y Google Maps API'
+          "
+          [second_text]="
+            'Desarrollado en HTML5, CSS3, JS, PHP, MySQL, Codeigniter 4, Bootstrap 5, GoogleApi'
+          "
+          [has_links]="false"
+          [no_link_text]="'LINKS: No dispone. Sistema diseñado para una empresa particular.'"
+        ></app-modal>
+
+        <app-modal
+          [id]="'ModalThree'"
+          [img]="'assets/images/portfolio/project1/img1.jpg'"
+          [second_img]="'assets/images/portfolio/project1/img2.jpg'"
+          [thirth_img]="'assets/images/portfolio/project1/img3.jpg'"
+          [type]="'Java desktop App'"
+          [title]="'Gestor Usuario Personal'"
+          [first_text]="
+            'Se trata de un programa diseñado en Java para almacenar toda la información sobre cuentas, correos, usuarios, contraseñas, y otra información personal. '
+          "
+          [second_text]="
+            'Pensado en una base de datos local generada en LOG o TXT con cifrado doble para su maxima proteccion. Desarrollado en Java, NetbBeans, JDK, JFrame'
+          "
+          [github_link]="'https://github.com/TomatoTok/Gup'"
+          [page_link]="'https://codepen.io/tomatotok/full/abWZeee'"
+          [has_a_web]="true"
+        ></app-modal>
+
+        <app-modal
+          [id]="'ModalFour'"
+          [img]="'assets/images/portfolio/project6/img1.jpg'"
+          [second_img]="'assets/images/portfolio/project6/init.jpg'"
+          [type]="'Weather API'"
+          [title]="'Aplicacion Web del Clima'"
+          [first_text]="
+            'Pagina simple con motor JS y WeatherAPI para ver el clima en tu localidad. (es necesario permitir la ubicación)'
+          "
+          [second_text]="'Desarrollado con HTML5, CSS3, JS, WeatherAPI'"
+          [github_link]="'https://github.com/TomatoTok/climapp'"
+          [page_link]="'https://tomatotok.github.io/climapp/'"
+          [has_a_web]="true"
+        ></app-modal>
+
+        <app-modal
+          [id]="'ModalFive'"
+          [img]="'assets/images/portfolio/project3/img1.jpg'"
+          [second_img]="'assets/images/portfolio/project3/init.jpg'"
+          [type]="'QR API'"
+          [title]="'Generador de QR'"
+          [first_text]="
+            'Generador de QR con motor JS, permite crear cualquier tipo de texto a un QR tanto como una url como una frase o cadena de caracteres.'
+          "
+          [second_text]="'Desarrollado con HTML5, CSS3, JS, QR-web-API'"
+          [github_link]="'https://github.com/TomatoTok/qr-generator'"
+          [page_link]="'https://tomatotok.github.io/qr-generator/'"
+          [has_a_web]="true"
+        ></app-modal>
+
+        <app-modal
+          [id]="'ModalSix'"
+          [img]="'assets/images/portfolio/project8/init.jpg'"
+          [second_img]="'assets/images/portfolio/project8/img3.jpg'"
+          [thirth_img]="'assets/images/portfolio/project8/img2.jpg'"
+          [type]="'Games'"
+          [title]="'Proyecto Café'"
+          [first_text]="
+            'Juego de historia lineal basado en RPGMaker (Motor JavaScript). Proyecto de 6 meses de elaboración, duración del gameplay apróx 1hr a 2hrs.'
+          "
+          [second_text]="
+            'Desarrollado en RPG Maker Studio, JavaScript, Maker Interface'
+          "
+          [has_links]="false"
+          [no_link_text]="'LINKS: No dispone. RPG Maker tiene conflictos para exportar una demo estable.'"
+        ></app-modal>
+
+        <app-modal
+          [id]="'ModalSeven'"
+          [img]="'assets/images/portfolio/project9/img2.png'"
+          [second_img]="'assets/images/portfolio/project9/img3.png'"
+          [type]="'Fan-Page'"
+          [title]="'Shoji Meguro FP'"
+          [first_text]="
+            'Shoji Meguro & Persona Fan Page, dedicada a uno de mis referentes y una de las sagas de juegos favoritas, creado para practicar JS y CSS, estilo y diseño propio'
+          "
+          [second_text]="'Desarrollado con HTML5, CSS3, JS'"
+          [github_link]="'https://github.com/TomatoTok/shoji-meguro-fp'"
+          [page_link]="'https://tomatotok.github.io/shoji-meguro-fp/'"
+          [has_a_web]="true"
+        ></app-modal>
+      </div>
+    </div>
+
+    <!-- Game Development Section -->
     <div class="row mt--25 mt_md--5 mt_sm--5">
       <div class="row mt-5 pt-5">
         <div class="col-lg-12">
@@ -253,55 +273,35 @@
                   <div
                     class="col-lg-4 col-md-6 col-sm-12"
                     data-bs-toggle="modal"
+                    data-bs-target="#ModalTwelve"
+                  >
+                    <app-single-proyect
+                      [category]="'Godot Engine'"
+                      [title]="'Island Project'"
+                      [img]="'assets/images/portfolio/game4/image1.png'"
+                    ></app-single-proyect>
+                  </div>
+                  <div
+                    class="col-lg-4 col-md-6 col-sm-12"
+                    data-bs-toggle="modal"
                     data-bs-target="#ModalEight"
                   >
-                  <app-single-proyect
-                  [category]="'Godot Engine'"
-                  [title]="'Plataformas'"
-                  [img]="'assets/images/portfolio/game1/img1.png'"
-                ></app-single-proyect>
-                    <app-modal-video
-                      [id]="'ModalEight'"
-                      [vid]="'assets/videos/godot-project.mp4'"
-                      [img]="'assets/images/portfolio/project5/init.jpg'"
-                      [type]="'Godot Engine'"
-                      [title]="'Proyecto Godot'"
-                      [first_text]="
-                        'Proyecto de videojuego en Godot Engine, motor de videojuegos de código abierto. Juego de plataformas en 2D con mecánicas de salto y plataformeo.'
-                      "
-                      [second_text]="
-                        'Desarrollado en Godot Engine, GDScript, Aseprite'
-                      "
-                      [has_links]="false"
-                      [no_link_text]="
-                        'LINKS: No dispone. Proyecto en desarrollo.'
-                      "
-                    ></app-modal-video>
+                    <app-single-proyect
+                      [category]="'Godot Engine'"
+                      [title]="'Plataformas'"
+                      [img]="'assets/images/portfolio/game1/img1.png'"
+                    ></app-single-proyect>
                   </div>
                   <div
                     class="col-lg-4 col-md-6 col-sm-12"
                     data-bs-toggle="modal"
                     data-bs-target="#ModalNine"
                   >
-                  <app-single-proyect
-                  [category]="'Unity'"
-                  [title]="'Tetris'"
-                  [img]="'assets/images/portfolio/game2/img1.png'"
-                ></app-single-proyect>
-                    <app-modal-video
-                      [id]="'ModalNine'"
-                      [vid]="'assets/videos/tetris-unity.mp4'"
-                      [img]="'assets/images/portfolio/project5/init.jpg'"
-                      [type]="'Unity Engine'"
-                      [title]="'Proyecto Unity'"
-                      [first_text]="
-                        'Proyecto de videojuego en Unity Engine. Juego de replica del famoso juego de Tetris.'
-                      "
-                      [has_links]="false"
-                      [no_link_text]="
-                        'LINKS: No dispone. Proyecto en desarrollo.'
-                      "
-                    ></app-modal-video>
+                    <app-single-proyect
+                      [category]="'Unity'"
+                      [title]="'Tetris'"
+                      [img]="'assets/images/portfolio/game2/img1.png'"
+                    ></app-single-proyect>
                   </div>
                 </div>
               </div>
@@ -309,6 +309,84 @@
           </div>
         </div>
       </div>
+
+      <!-- Game Development Modals -->
+      <app-modal-video
+        [id]="'ModalTwelve'"
+        [vid]="'assets/videos/muestra_isla_2.mp4'"
+        [img]="'assets/images/portfolio/game4/image1.jpg'"
+        [type]="'Godot Engine'"
+        [title]="'Island Project'"
+        [first_text]="
+          'Proyecto de videojuego en Godot Engine, motor de videojuegos de código abierto. Muestra de proyecto con Blender y Godot Engine con Assets.'
+        "
+        [second_text]="
+          'Desarrollado en Godot Engine, GDScript, Aseprite'
+        "
+        [has_links]="false"
+        [no_link_text]="''"
+      ></app-modal-video>
+      
+      <app-modal-video
+        [id]="'ModalEight'"
+        [vid]="'assets/videos/godot-project.mp4'"
+        [img]="'assets/images/portfolio/game1/img1.png'"
+        [type]="'Godot Engine'"
+        [title]="'Plataformas'"
+        [first_text]="
+          'Proyecto de videojuego en Godot Engine, motor de videojuegos de código abierto. Juego de plataformas en 2D con mecánicas de salto y plataformeo.'
+        "
+        [second_text]="
+          'Desarrollado en Godot Engine, GDScript, Aseprite'
+        "
+        [has_links]="false"
+        [no_link_text]="'LINKS: No dispone. Proyecto en desarrollo.'"
+      ></app-modal-video>
+      
+      <app-modal-video
+        [id]="'ModalNine'"
+        [vid]="'assets/videos/tetris-unity.mp4'"
+        [img]="'assets/images/portfolio/game2/img1.png'"
+        [type]="'Unity Engine'"
+        [title]="'Tetris Unity'"
+        [first_text]="'Proyecto de videojuego en Unity Engine. Juego de replica del famoso juego de Tetris.'"
+        [second_text]="'Desarrollado en Unity Engine, C#'"
+        [has_links]="false"
+        [no_link_text]="'LINKS: No dispone. Proyecto en desarrollo.'"
+      ></app-modal-video>
+      
+      <app-modal-video
+        [id]="'ModalTen'"
+        [vid]="'assets/videos/mt-tools-video.mp4'"
+        [img]="'assets/images/portfolio/project10/img1.png'"
+        [type]="'ReactJS / NodeJS'"
+        [title]="'Sistema de Gestión de Inventarios'"
+        [first_text]="
+          'Sistema de gestión de inventarios desarrollado en ReactJS, NodeJS y MongoDB. Permite gestionar productos, categorías, usuarios y roles con autenticación y autorización. Integrado con Google Auth para inicio de sesión seguro. Posibilidad de crear categorías, items e inventarios nuevos para una gestión personalizada y completa.'
+        "
+        [second_text]="
+          'Desarrollado en ReactJS, NodeJS, MongoDB'
+        "
+        [has_links]="false"
+        [no_link_text]="'No dispone. Proyecto privado.'"
+      ></app-modal-video>
+      
+      <app-modal-video
+        [id]="'ModalEleven'"
+        [vid]="'assets/videos/portfolio_fotografia.mp4'"
+        [img]="'assets/images/portfolio/project11/img1.png'"
+        [type]="'EJS / NodeJS'"
+        [title]="'Portfolio Fotografía con Sistema Interno'"
+        [first_text]="
+          'Portfolio de fotografía con sistema interno de gestión de contenidos desarrollado en EJS y NodeJS. Permite gestionar imágenes, categorías. Adaptable para PC, Notebooks, Tablets y celulares.'
+        "
+        [second_text]="
+          'Desarrollado en EJS, NodeJS'
+        "
+        [has_links]="false"
+        [no_link_text]="'No dispone. Proyecto privado.'"
+      ></app-modal-video>
+      
       <!-- End portfolio Area -->
     </div>
   </div>

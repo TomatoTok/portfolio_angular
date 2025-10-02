@@ -1,5 +1,5 @@
     <!-- Modal Portfolio Body area Start -->
-    <div class="modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-hidden="false">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -14,10 +14,12 @@
                             <div class="portfolio-popup-thumbnail">
                                 <div id="{{id}}_carousel" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <video  [width]="600" [height]="350" controls loop muted style="border-radius: 15px;">
+                                        <div class="carousel-item active">
+                                        <video  [width]="600" [height]="400" controls loop muted class="modal-video">
                                             <source [src]="vid" type="video/mp4">
                                             Tu navegador no soporta la reproducción de video.
                                         </video>
+                                        </div> 
                                       <!-- <div class="carousel-item active">
                                         <img [src]="img" [width]="100" [height]="100" class="d-block w-100" alt="...">
                                       </div> -->

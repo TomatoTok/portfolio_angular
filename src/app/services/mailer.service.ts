@@ -1,6 +1,5 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import * as Mail from 'nodemailer/lib/mailer';
 import { catchError, firstValueFrom, throwError } from 'rxjs';
 
 @Injectable({
@@ -18,7 +17,7 @@ export class MailerService {
 
   envioCorreo(mail: any): Promise<any> {
     const url = this.url + 'mailer-module';
-    const result = this.Http.post<Mail>(url, mail);
+    const result = this.Http.post<any>(url, mail);
     return firstValueFrom(result.pipe(catchError(this.handleError)));
   }
 }
