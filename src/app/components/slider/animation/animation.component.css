@@ -20,25 +20,27 @@ body {
     align-items: center;
     margin: 1rem;
     text-align: center;
+  }
   
-    h1 {
-      font-weight: 600;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+  header h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
   
-      @media (min-width: 768px) {
-        font-size: 3rem;
-      }
+  @media (min-width: 768px) {
+    header h1 {
+      font-size: 3rem;
     }
+  }
   
-    p {
-      color: #94a3b8;
-      margin-bottom: 0.5rem;
-    }
+  header p {
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+  }
   
-    a {
-      color: #7393c1;
-    }
+  header a {
+    color: #7393c1;
   }
   
   .tag-list {
@@ -53,16 +55,14 @@ body {
     overflow: hidden;
   }
   
-  .loop-slider {
-    .inner {
-      display: flex;
-      width: fit-content;
-      animation-name: loop;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: var(--direction);
-      animation-duration: var(--duration);
-    }
+  .loop-slider .inner {
+    display: flex;
+    width: fit-content;
+    animation-name: loop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: var(--direction);
+    animation-duration: var(--duration);
   }
   
   .tag {
@@ -77,11 +77,11 @@ body {
     margin-right: 1rem; /* Must used margin-right instead of gap for the loop to be smooth */
     box-shadow:0 0.1rem 0.2rem rgb(0 0 0 / 10%), 0 0.1rem 0.5rem rgb(0 0 0 / 10%),
     0 0.2rem 1.5rem rgb(0 0 0 / 20%);
+  }
   
-    span {
-      font-size: 1.2rem;
-      color: #64748b;
-    }
+  .tag span {
+    font-size: 1.2rem;
+    color: #64748b;
   }
   
   .fade {
