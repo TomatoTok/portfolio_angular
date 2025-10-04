@@ -8,7 +8,7 @@
     <div class="col-lg-2 col-6">
       <div class="header-left">
         <div class="logo">
-          <h5><span class="primary-menu" style="margin-left:20px ;">Tomato</span></h5>
+          <h5><span class="primary-menu" style="margin-left:20px ;">{{ 'navbar.logo' | translate }}</span></h5>
           <!-- <a href="index.html">
                         <img src="assets/images/logo/logo.png" alt="logo">
                     </a> -->
@@ -24,30 +24,30 @@
           btn" (click)="closeNav()">&times;</a>
           <ul class="primary-menu nav nav-pills">
             <li class="nav-item current">
-              <a class="nav-link smoth-animation active" href="#home">Inicio</a>
+              <a class="nav-link smoth-animation active" href="#home">{{ 'navbar.home' | translate }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#resume">Resumen</a>
+              <a class="nav-link smoth-animation" href="#resume">{{ 'navbar.resume' | translate }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#resume">Educacion</a>
+              <a class="nav-link smoth-animation" href="#resume">{{ 'navbar.education' | translate }}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link smoth-animation" href="#portfolio"
-                >Portfolio</a
+                >{{ 'navbar.portfolio' | translate }}</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link smoth-animation" href="#experiences"
-                >Trayectoria</a
+                >{{ 'navbar.experience' | translate }}</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#blog">Blog</a>
+              <a class="nav-link smoth-animation" href="#blog">{{ 'navbar.blog' | translate }}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link smoth-animation" href="#footer"
-                >Pie de Página</a
+                >{{ 'navbar.footer' | translate }}</a
               >
             </li>
           </ul>
@@ -60,30 +60,30 @@
           <!-- Start Mainmanu Nav -->
           <ul class="primary-menu nav nav-pills">
             <li class="nav-item current">
-              <a class="nav-link smoth-animation active" href="#home">Inicio</a>
+              <a class="nav-link smoth-animation active" href="#home">{{ 'navbar.home' | translate }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#resume">Resumen</a>
+              <a class="nav-link smoth-animation" href="#resume">{{ 'navbar.resume' | translate }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#resume">Educacion</a>
+              <a class="nav-link smoth-animation" href="#resume">{{ 'navbar.education' | translate }}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link smoth-animation" href="#portfolio"
-                >Portfolio</a
+                >{{ 'navbar.portfolio' | translate }}</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link smoth-animation" href="#experiences"
-                >Trayectoria</a
+                >{{ 'navbar.experience' | translate }}</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#blog">Blog</a>
+              <a class="nav-link smoth-animation" href="#blog">{{ 'navbar.blog' | translate }}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link smoth-animation" href="#footer"
-                >Pie de Página</a
+                >{{ 'navbar.footer' | translate }}</a
               >
             </li>
           </ul>
@@ -91,6 +91,22 @@
         </nav>
         <!-- Start Header Right  -->
         <div class="header-right">
+          <!-- Language Selector -->
+          <div class="language-selector d-none d-xl-flex me-3">
+            <button 
+              class="btn btn-outline-light btn-sm me-2"
+              [class.active]="(currentLang$ | async) === 'es'"
+              (click)="changeLanguage('es')">
+              ES
+            </button>
+            <button 
+              class="btn btn-outline-light btn-sm"
+              [class.active]="(currentLang$ | async) === 'en'"
+              (click)="changeLanguage('en')">
+              EN
+            </button>
+          </div>
+          
           <div class="hamberger-menu d-block d-xl-none">
             <i id="menuBtn" class="feather-menu humberger-menu" (click)="openNav()"></i>
           </div>

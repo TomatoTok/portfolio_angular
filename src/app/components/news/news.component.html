@@ -10,8 +10,8 @@
           data-aos-once="true"
           class="section-title text-center"
         >
-          <span class="subtitle">Más sobre mi</span>
-          <h2 class="title">Mi Blog</h2>
+          <span class="subtitle">{{ 'blog.subtitle' | translate }}</span>
+          <h2 class="title">{{ 'blog.title' | translate }}</h2>
         </div>
       </div>
     </div>
@@ -43,15 +43,15 @@
             <div class="content">
               <div class="category-info">
                 <div class="category-list">
-                  <a href="javascript:void(0)">Videojuegos</a>
+                  <a href="javascript:void(0)">{{ 'blog.posts.videojuegos.category' | translate }}</a>
                 </div>
                 <div class="meta">
-                  <span><i class="feather-clock"></i> 10 min lectura</span>
+                  <span><i class="feather-clock"></i> {{ 'blog.posts.videojuegos.readTime' | translate }} {{ 'blog.readTime' | translate }}</span>
                 </div>
               </div>
               <h4 class="title">
                 <a href="javascript:void(0)"
-                  >No sólo es jugar
+                  >{{ 'blog.posts.videojuegos.title' | translate }}
                   <i class="feather-arrow-up-right"></i
                 ></a>
               </h4>
@@ -88,15 +88,15 @@
             <div class="content">
               <div class="category-info">
                 <div class="category-list">
-                  <a href="javascript:void(0)">Microemprendimiento</a>
+                  <a href="javascript:void(0)">{{ 'blog.posts.impresion3d.category' | translate }}</a>
                 </div>
                 <div class="meta">
-                  <span><i class="feather-clock"></i> 12 min lectura</span>
+                  <span><i class="feather-clock"></i> {{ 'blog.posts.impresion3d.readTime' | translate }} {{ 'blog.readTime' | translate }}</span>
                 </div>
               </div>
               <h4 class="title">
                 <a href="javascript:void(0)"
-                  >Impresion 3D
+                  >{{ 'blog.posts.impresion3d.title' | translate }}
                   <i class="feather-arrow-up-right"></i
                 ></a>
               </h4>
@@ -133,15 +133,15 @@
             <div class="content">
               <div class="category-info">
                 <div class="category-list">
-                  <a href="javascript:void(0)">vida social</a>
+                  <a href="javascript:void(0)">{{ 'blog.posts.vidaSocial.category' | translate }}</a>
                 </div>
                 <div class="meta">
-                  <span><i class="feather-clock"></i> 5 min lectura</span>
+                  <span><i class="feather-clock"></i> {{ 'blog.posts.vidaSocial.readTime' | translate }} {{ 'blog.readTime' | translate }}</span>
                 </div>
               </div>
               <h4 class="title">
                 <a href="javascript:void(0)"
-                  >Informáticos y lo social<i
+                  >{{ 'blog.posts.vidaSocial.title' | translate }}<i
                     class="feather-arrow-up-right"
                   ></i
                 ></a>
@@ -155,7 +155,7 @@
 
       <app-blog-modal
         [id]="'modal-blog-1'"
-        [title]="'Videojuegos'"
+        [title]="'blog.modals.videojuegos.title' | translate"
         [img]="'assets/images/blog/blog-01.jpg'"
         [type_1]="true"
       ></app-blog-modal>
@@ -164,7 +164,7 @@
 
       <app-blog-modal
         [id]="'modal-blog-2'"
-        [title]="'Impresion 3D como emprendimiento'"
+        [title]="'blog.modals.impresion3d.title' | translate"
         [img]="'assets/images/blog/vari.webp'"
         [type_2]="true"
       ></app-blog-modal>
@@ -174,7 +174,7 @@
       <app-blog-modal
         [id]="'modal-blog-3'"
         [img]="'assets/images/blog/blog-03.jpg'"
-        [title]="'Vida social'"
+        [title]="'blog.modals.vidaSocial.title' | translate"
         [type_3]="true"
       ></app-blog-modal>
       <!-- End of Modal 1 blog section-->

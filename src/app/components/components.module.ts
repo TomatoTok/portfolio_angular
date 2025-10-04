@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { VideoProjectComponent } from './portfolio/video-project/video-project.component';
 import { ModalVideoComponent } from './portfolio/modal-video/modal-video.component';
 import { AnimationComponent } from './slider/animation/animation.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { AnimationComponent } from './slider/animation/animation.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    SharedModule
   ],
   exports: [BioComponent, SliderComponent, ExperienceComponent],
   providers: [],

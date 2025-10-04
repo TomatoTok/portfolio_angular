@@ -13,8 +13,8 @@
           data-aos-once="true"
           class="section-title text-center"
         >
-          <span class="subtitle">Presiona las tarjetas para más detalles</span>
-          <h2 class="title">Portfolio</h2>
+          <span class="subtitle">{{ 'portfolio.subtitle' | translate }}</span>
+          <h2 class="title">{{ 'portfolio.title' | translate }}</h2>
         </div>
       </div>
     </div>
@@ -34,8 +34,8 @@
               data-bs-target="#ModalEleven"
             >
               <app-single-proyect
-                [category]="'Portfolio'"
-                [title]="'Portfolio Fotografía'"
+                [category]="'portfolio.projects.portfolioFotografia.category' | translate"
+                [title]="'portfolio.projects.portfolioFotografia.title' | translate"
                 [img]="'assets/images/portfolio/project11/img1.png'"
               ></app-single-proyect>
             </div>
@@ -45,8 +45,8 @@
               data-bs-target="#ModalTen"
             >
               <app-single-proyect
-                [category]="'Sistemas'"
-                [title]="'Sistema de Inventarios'"
+                [category]="'portfolio.projects.sistemaInventarios.category' | translate"
+                [title]="'portfolio.projects.sistemaInventarios.title' | translate"
                 [img]="'assets/images/portfolio/project10/img1.png'"
               ></app-single-proyect>
             </div>
@@ -56,8 +56,8 @@
               data-bs-target="#ModalOne"
             >
               <app-single-proyect
-                [category]="'Dashboard'"
-                [title]="'Dashboard tipo Admin'"
+                [category]="'portfolio.projects.dashboardAdmin.category' | translate"
+                [title]="'portfolio.projects.dashboardAdmin.title' | translate"
                 [img]="'assets/images/portfolio/project7/img1.jpg'"
               ></app-single-proyect>
             </div>
@@ -67,8 +67,8 @@
               data-bs-target="#ModalTwo"
             >
               <app-single-proyect
-                [category]="'API'"
-                [title]="'Sistema de posicionamiento regional'"
+                [category]="'portfolio.projects.sistemaPosicionamiento.category' | translate"
+                [title]="'portfolio.projects.sistemaPosicionamiento.title' | translate"
                 [img]="'assets/images/portfolio/project4/img1.jpg'"
               ></app-single-proyect>
             </div>
@@ -78,8 +78,8 @@
               data-bs-target="#ModalThree"
             >
               <app-single-proyect
-                [category]="'GUP'"
-                [title]="'Gestor Usuario Personal'"
+                [category]="'portfolio.projects.gestorUsuario.category' | translate"
+                [title]="'portfolio.projects.gestorUsuario.title' | translate"
                 [img]="'assets/images/portfolio/project1/img1.jpg'"
               ></app-single-proyect>
             </div>
@@ -100,8 +100,8 @@
               data-bs-target="#ModalFive"
             >
               <app-single-proyect
-                [category]="'QR API'"
-                [title]="'Generador de QR'"
+                [category]="'portfolio.projects.generadorQR.category' | translate"
+                [title]="'portfolio.projects.generadorQR.title' | translate"
                 [img]="'assets/images/portfolio/project3/img1.jpg'"
               ></app-single-proyect>
             </div>
@@ -122,14 +122,10 @@
           [img]="'assets/images/portfolio/project7/init.jpg'"
           [second_img]="'assets/images/portfolio/project7/img1.jpg'"
           [thirth_img]="'assets/images/portfolio/project7/img2.jpg'"
-          [type]="'Dashboard tipo Admin'"
-          [title]="'Sistema de análisis estadístico'"
-          [first_text]="
-            'Sistema avanzado con Framework Codeigniter 4 (PHP) estilo Admin, con Dashboard, Perfil, Login, Graficos estadistico, Base de Datos y más. Modelo base para múltiples tipos de sistemas estadísticos y analíticos.'
-          "
-          [second_text]="
-            'Desarrollado en HTML5, CSS3, JS, PHP, MySQL, Codeigniter 4, Bootstrap 5'
-          "
+          [type]="'portfolio.modals.dashboardAdmin.type' | translate"
+          [title]="'portfolio.modals.dashboardAdmin.title' | translate"
+          [first_text]="'portfolio.modals.dashboardAdmin.firstText' | translate"
+          [second_text]="'portfolio.modals.dashboardAdmin.secondText' | translate"
           [github_link]="'https://github.com/TomatoTok/adminDashboard'"
           [page_link]="'https://tomatotok.github.io/adminDashboard/'"
           [has_a_web]="true"
@@ -139,16 +135,12 @@
           [id]="'ModalTwo'"
           [img]="'assets/images/portfolio/project4/init.jpg'"
           [second_img]="'assets/images/portfolio/project4/img1.jpg'"
-          [type]="'Geoposicionamiento'"
-          [title]="'Sistema de posicionamiento regional'"
-          [first_text]="
-            'Sistema creado para una empresa de gestion de locaciones basado en coordenadas geográficas. Mapa interactivo con notificaciones y dashboard tipo admin incluido. Motor en JS y Google Maps API'
-          "
-          [second_text]="
-            'Desarrollado en HTML5, CSS3, JS, PHP, MySQL, Codeigniter 4, Bootstrap 5, GoogleApi'
-          "
+          [type]="'portfolio.modals.sistemaPosicionamiento.type' | translate"
+          [title]="'portfolio.modals.sistemaPosicionamiento.title' | translate"
+          [first_text]="'portfolio.modals.sistemaPosicionamiento.firstText' | translate"
+          [second_text]="'portfolio.modals.sistemaPosicionamiento.secondText' | translate"
           [has_links]="false"
-          [no_link_text]="'LINKS: No dispone. Sistema diseñado para una empresa particular.'"
+          [no_link_text]="'portfolio.modals.sistemaPosicionamiento.noLinkText' | translate"
         ></app-modal>
 
         <app-modal
@@ -156,14 +148,10 @@
           [img]="'assets/images/portfolio/project1/img1.jpg'"
           [second_img]="'assets/images/portfolio/project1/img2.jpg'"
           [thirth_img]="'assets/images/portfolio/project1/img3.jpg'"
-          [type]="'Java desktop App'"
-          [title]="'Gestor Usuario Personal'"
-          [first_text]="
-            'Se trata de un programa diseñado en Java para almacenar toda la información sobre cuentas, correos, usuarios, contraseñas, y otra información personal. '
-          "
-          [second_text]="
-            'Pensado en una base de datos local generada en LOG o TXT con cifrado doble para su maxima proteccion. Desarrollado en Java, NetbBeans, JDK, JFrame'
-          "
+          [type]="'portfolio.modals.gestorUsuario.type' | translate"
+          [title]="'portfolio.modals.gestorUsuario.title' | translate"
+          [first_text]="'portfolio.modals.gestorUsuario.firstText' | translate"
+          [second_text]="'portfolio.modals.gestorUsuario.secondText' | translate"
           [github_link]="'https://github.com/TomatoTok/Gup'"
           [page_link]="'https://codepen.io/tomatotok/full/abWZeee'"
           [has_a_web]="true"
@@ -188,12 +176,10 @@
           [id]="'ModalFive'"
           [img]="'assets/images/portfolio/project3/img1.jpg'"
           [second_img]="'assets/images/portfolio/project3/init.jpg'"
-          [type]="'QR API'"
-          [title]="'Generador de QR'"
-          [first_text]="
-            'Generador de QR con motor JS, permite crear cualquier tipo de texto a un QR tanto como una url como una frase o cadena de caracteres.'
-          "
-          [second_text]="'Desarrollado con HTML5, CSS3, JS, QR-web-API'"
+          [type]="'portfolio.modals.generadorQR.type' | translate"
+          [title]="'portfolio.modals.generadorQR.title' | translate"
+          [first_text]="'portfolio.modals.generadorQR.firstText' | translate"
+          [second_text]="'portfolio.modals.generadorQR.secondText' | translate"
           [github_link]="'https://github.com/TomatoTok/qr-generator'"
           [page_link]="'https://tomatotok.github.io/qr-generator/'"
           [has_a_web]="true"
@@ -204,16 +190,12 @@
           [img]="'assets/images/portfolio/project8/init.jpg'"
           [second_img]="'assets/images/portfolio/project8/img3.jpg'"
           [thirth_img]="'assets/images/portfolio/project8/img2.jpg'"
-          [type]="'Games'"
-          [title]="'Proyecto Café'"
-          [first_text]="
-            'Juego de historia lineal basado en RPGMaker (Motor JavaScript). Proyecto de 6 meses de elaboración, duración del gameplay apróx 1hr a 2hrs.'
-          "
-          [second_text]="
-            'Desarrollado en RPG Maker Studio, JavaScript, Maker Interface'
-          "
+          [type]="'portfolio.modals.proyectoCafe.type' | translate"
+          [title]="'portfolio.modals.proyectoCafe.title' | translate"
+          [first_text]="'portfolio.modals.proyectoCafe.firstText' | translate"
+          [second_text]="'portfolio.modals.proyectoCafe.secondText' | translate"
           [has_links]="false"
-          [no_link_text]="'LINKS: No dispone. RPG Maker tiene conflictos para exportar una demo estable.'"
+          [no_link_text]="'portfolio.modals.proyectoCafe.noLinkText' | translate"
         ></app-modal>
 
         <app-modal
@@ -245,9 +227,9 @@
             class="section-title text-center"
           >
             <span class="subtitle"
-              >Presiona las tarjetas para más detalles</span
+              >{{ 'portfolio.subtitle' | translate }}</span
             >
-            <h2 class="title">Portfolio Game Development</h2>
+            <h2 class="title">{{ 'portfolio.gameDevTitle' | translate }}</h2>
           </div>
           <div class="row mt--25 mt_md--5 mt_sm--5">
             <div class="col-lg-12">
@@ -265,8 +247,8 @@
                     data-bs-target="#ModalSix"
                   >
                     <app-single-proyect
-                      [category]="'RPGMaker'"
-                      [title]="'Proyecto Café'"
+                      [category]="'portfolio.projects.proyectoCafe.category' | translate"
+                      [title]="'portfolio.projects.proyectoCafe.title' | translate"
                       [img]="'assets/images/portfolio/project8/init.jpg'"
                     ></app-single-proyect>
                   </div>
@@ -276,8 +258,8 @@
                     data-bs-target="#ModalTwelve"
                   >
                     <app-single-proyect
-                      [category]="'Godot Engine'"
-                      [title]="'Island Project'"
+                      [category]="'portfolio.projects.islandProject.category' | translate"
+                      [title]="'portfolio.projects.islandProject.title' | translate"
                       [img]="'assets/images/portfolio/game4/image1.png'"
                     ></app-single-proyect>
                   </div>
@@ -287,8 +269,8 @@
                     data-bs-target="#ModalEight"
                   >
                     <app-single-proyect
-                      [category]="'Godot Engine'"
-                      [title]="'Plataformas'"
+                      [category]="'portfolio.projects.plataformas.category' | translate"
+                      [title]="'portfolio.projects.plataformas.title' | translate"
                       [img]="'assets/images/portfolio/game1/img1.png'"
                     ></app-single-proyect>
                   </div>
@@ -298,8 +280,8 @@
                     data-bs-target="#ModalNine"
                   >
                     <app-single-proyect
-                      [category]="'Unity'"
-                      [title]="'Tetris'"
+                      [category]="'portfolio.projects.tetris.category' | translate"
+                      [title]="'portfolio.projects.tetris.title' | translate"
                       [img]="'assets/images/portfolio/game2/img1.png'"
                     ></app-single-proyect>
                   </div>
@@ -315,14 +297,10 @@
         [id]="'ModalTwelve'"
         [vid]="'assets/videos/muestra_isla_2.mp4'"
         [img]="'assets/images/portfolio/game4/image1.jpg'"
-        [type]="'Godot Engine'"
-        [title]="'Island Project'"
-        [first_text]="
-          'Proyecto de videojuego en Godot Engine, motor de videojuegos de código abierto. Muestra de proyecto con Blender y Godot Engine con Assets.'
-        "
-        [second_text]="
-          'Desarrollado en Godot Engine, GDScript, Aseprite'
-        "
+        [type]="'portfolio.modals.islandProject.type' | translate"
+        [title]="'portfolio.modals.islandProject.title' | translate"
+        [first_text]="'portfolio.modals.islandProject.firstText' | translate"
+        [second_text]="'portfolio.modals.islandProject.secondText' | translate"
         [has_links]="false"
         [no_link_text]="''"
       ></app-modal-video>
@@ -331,60 +309,48 @@
         [id]="'ModalEight'"
         [vid]="'assets/videos/godot-project.mp4'"
         [img]="'assets/images/portfolio/game1/img1.png'"
-        [type]="'Godot Engine'"
-        [title]="'Plataformas'"
-        [first_text]="
-          'Proyecto de videojuego en Godot Engine, motor de videojuegos de código abierto. Juego de plataformas en 2D con mecánicas de salto y plataformeo.'
-        "
-        [second_text]="
-          'Desarrollado en Godot Engine, GDScript, Aseprite'
-        "
+        [type]="'portfolio.modals.plataformas.type' | translate"
+        [title]="'portfolio.modals.plataformas.title' | translate"
+        [first_text]="'portfolio.modals.plataformas.firstText' | translate"
+        [second_text]="'portfolio.modals.plataformas.secondText' | translate"
         [has_links]="false"
-        [no_link_text]="'LINKS: No dispone. Proyecto en desarrollo.'"
+        [no_link_text]="'portfolio.modals.plataformas.noLinkText' | translate"
       ></app-modal-video>
       
       <app-modal-video
         [id]="'ModalNine'"
         [vid]="'assets/videos/tetris-unity.mp4'"
         [img]="'assets/images/portfolio/game2/img1.png'"
-        [type]="'Unity Engine'"
-        [title]="'Tetris Unity'"
-        [first_text]="'Proyecto de videojuego en Unity Engine. Juego de replica del famoso juego de Tetris.'"
-        [second_text]="'Desarrollado en Unity Engine, C#'"
+        [type]="'portfolio.modals.tetrisUnity.type' | translate"
+        [title]="'portfolio.modals.tetrisUnity.title' | translate"
+        [first_text]="'portfolio.modals.tetrisUnity.firstText' | translate"
+        [second_text]="'portfolio.modals.tetrisUnity.secondText' | translate"
         [has_links]="false"
-        [no_link_text]="'LINKS: No dispone. Proyecto en desarrollo.'"
+        [no_link_text]="'portfolio.modals.tetrisUnity.noLinkText' | translate"
       ></app-modal-video>
       
       <app-modal-video
         [id]="'ModalTen'"
         [vid]="'assets/videos/mt-tools-video.mp4'"
         [img]="'assets/images/portfolio/project10/img1.png'"
-        [type]="'ReactJS / NodeJS'"
-        [title]="'Sistema de Gestión de Inventarios'"
-        [first_text]="
-          'Sistema de gestión de inventarios desarrollado en ReactJS, NodeJS y MongoDB. Permite gestionar productos, categorías, usuarios y roles con autenticación y autorización. Integrado con Google Auth para inicio de sesión seguro. Posibilidad de crear categorías, items e inventarios nuevos para una gestión personalizada y completa.'
-        "
-        [second_text]="
-          'Desarrollado en ReactJS, NodeJS, MongoDB'
-        "
+        [type]="'portfolio.modals.sistemaInventarios.type' | translate"
+        [title]="'portfolio.modals.sistemaInventarios.title' | translate"
+        [first_text]="'portfolio.modals.sistemaInventarios.firstText' | translate"
+        [second_text]="'portfolio.modals.sistemaInventarios.secondText' | translate"
         [has_links]="false"
-        [no_link_text]="'No dispone. Proyecto privado.'"
+        [no_link_text]="'portfolio.modals.sistemaInventarios.noLinkText' | translate"
       ></app-modal-video>
       
       <app-modal-video
         [id]="'ModalEleven'"
         [vid]="'assets/videos/portfolio_fotografia.mp4'"
         [img]="'assets/images/portfolio/project11/img1.png'"
-        [type]="'EJS / NodeJS'"
-        [title]="'Portfolio Fotografía con Sistema Interno'"
-        [first_text]="
-          'Portfolio de fotografía con sistema interno de gestión de contenidos desarrollado en EJS y NodeJS. Permite gestionar imágenes, categorías. Adaptable para PC, Notebooks, Tablets y celulares.'
-        "
-        [second_text]="
-          'Desarrollado en EJS, NodeJS'
-        "
+        [type]="'portfolio.modals.portfolioFotografia.type' | translate"
+        [title]="'portfolio.modals.portfolioFotografia.title' | translate"
+        [first_text]="'portfolio.modals.portfolioFotografia.firstText' | translate"
+        [second_text]="'portfolio.modals.portfolioFotografia.secondText' | translate"
         [has_links]="false"
-        [no_link_text]="'No dispone. Proyecto privado.'"
+        [no_link_text]="'portfolio.modals.portfolioFotografia.noLinkText' | translate"
       ></app-modal-video>
       
       <!-- End portfolio Area -->

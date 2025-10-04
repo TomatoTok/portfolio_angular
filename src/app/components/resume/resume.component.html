@@ -5,8 +5,8 @@
             <div class="col-lg-12">
                 <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
                     class="section-title text-center">
-                    <span class="subtitle">5+ años de trayectoria</span>
-                    <h2 class="title">Mi Resumen</h2>
+                    <span class="subtitle">{{ 'resume.subtitle' | translate }}</span>
+                    <h2 class="title">{{ 'resume.title' | translate }}</h2>
                 </div>
             </div>
         </div>
@@ -16,15 +16,15 @@
                     class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab"
-                            aria-controls="education" aria-selected="true">educación</a>
+                            aria-controls="education" aria-selected="true">{{ 'resume.tabs.education' | translate }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " id="professional-tab" data-bs-toggle="tab" href="#professional" role="tab"
-                            aria-controls="professional" aria-selected="false">Habilidades</a>
+                            aria-controls="professional" aria-selected="false">{{ 'resume.tabs.skills' | translate }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab"
-                            aria-controls="experience" aria-selected="false">Experiencia</a>
+                            aria-controls="experience" aria-selected="false">{{ 'resume.tabs.experience' | translate }}</a>
                     </li>
                 </ul>
 
@@ -40,19 +40,19 @@
                                 <!-- Start Skill List Area  -->
                                 <div class="col-lg-6 col-md-12 col-12">
                                     <div class="content">
-                                        <span class="subtitle">2018 - Presente</span>
-                                        <h4 class="maintitle">Educación de Grado</h4>
+                                        <span class="subtitle">{{ 'resume.education.subtitle' | translate }}</span>
+                                        <h4 class="maintitle">{{ 'resume.education.title' | translate }}</h4>
                                         <div class="experience-list">
 
-                                            <app-single-list [title]="'Universidad del Comahue Neuquén'"
-                                                [subtitle]="'Lic. Ciencias de la Computacion/Sistemas'"
-                                                [description]="'Facultad de Informatica - Ubicada en Neuquen Capital (Confluencia), 3er Año de la carrera. Materias realizadas como Estuctura de Datos, Programacion Orientada a Objetos, Probabilidad y Estadística, Diseño de Bases de Datos, etc.'"></app-single-list>
-                                                <app-single-list [title]="'Cambridge English'"
-                                                [subtitle]="'Instituto de Ingles Cambridge Neuquen Capital '"
-                                                [description]="'Aprendizaje del idioma extranjero Ingles'"></app-single-list>
-                                            <app-single-list [title]="'Bachiller en Comunicación y Nuevos Medios '"
-                                                [subtitle]="'Secundario Cipolletti Rio Negro CEM N°35'"
-                                                [description]="'Egresado de Colegio Secundario CEM N°35 con titulo de Bachiller en Comunicación y Nuevos Medios.'"></app-single-list>
+                                            <app-single-list [title]="'resume.education.items.university.title' | translate"
+                                                [subtitle]="'resume.education.items.university.subtitle' | translate"
+                                                [description]="'resume.education.items.university.description' | translate"></app-single-list>
+                                                <app-single-list [title]="'resume.education.items.cambridge.title' | translate"
+                                                [subtitle]="'resume.education.items.cambridge.subtitle' | translate"
+                                                [description]="'resume.education.items.cambridge.description' | translate"></app-single-list>
+                                            <app-single-list [title]="'resume.education.items.bachiller.title' | translate"
+                                                [subtitle]="'resume.education.items.bachiller.subtitle' | translate"
+                                                [description]="'resume.education.items.bachiller.description' | translate"></app-single-list>
                                         </div>
                                     </div>
                                 </div>
@@ -61,19 +61,19 @@
                                 <!-- Start Skill List Area 2nd  -->
                                 <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
                                     <div class="content">
-                                        <span class="subtitle">2019 - Presente</span>
-                                        <h4 class="maintitle">Autodidacta</h4>
+                                        <span class="subtitle">{{ 'resume.education.autodidacta.subtitle' | translate }}</span>
+                                        <h4 class="maintitle">{{ 'resume.education.autodidacta.title' | translate }}</h4>
                                         <div class="experience-list">
 
-                                            <app-single-list [title]="'Cursos Online'"
-                                                [subtitle]="'Udemy | Platzi | FreeCode Camp | Angular Docs | otros.'"
-                                                [description]="'Cursos online con certificados de - Full Stack Javascript Development - Front End Development - Git basic to advance - y otros.'"></app-single-list>
+                                            <app-single-list [title]="'resume.education.items.cursosOnline.title' | translate"
+                                                [subtitle]="'resume.education.items.cursosOnline.subtitle' | translate"
+                                                [description]="'resume.education.items.cursosOnline.description' | translate"></app-single-list>
 
-                                            <app-single-list [title]="'Cursos universitarios'"
-                                                [subtitle]="'Cursos de Terceros'"
-                                                [description]="'Cursos promovidos por la Facultad de Informatica como Metodologías Agiles, Tacticas de desempeño en Algoritmos, Desarrollo e implementacion de Modelos Relacionales'"></app-single-list>
-                                            <app-single-list [title]="'YouTube'" [subtitle]="'Así es YouTube'"
-                                                [description]="'Gran parte de mi desarrollo se involucró en 200+ hs de contenido de desarrolladores en YouTube, fue mi gran profesor y tutor en mi formación como entusiasta y desarrollador'"></app-single-list>
+                                            <app-single-list [title]="'resume.education.items.cursosUniversitarios.title' | translate"
+                                                [subtitle]="'resume.education.items.cursosUniversitarios.subtitle' | translate"
+                                                [description]="'resume.education.items.cursosUniversitarios.description' | translate"></app-single-list>
+                                            <app-single-list [title]="'resume.education.items.youtube.title' | translate" [subtitle]="'resume.education.items.youtube.subtitle' | translate"
+                                                [description]="'resume.education.items.youtube.description' | translate"></app-single-list>
 
                                         </div>
                                     </div>
@@ -93,8 +93,8 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="progress-wrapper">
                                         <div class="content">
-                                            <span class="subtitle">Implementación</span>
-                                            <h4 class="maintitle">Lenguajes y Frameworks</h4>
+                                            <span class="subtitle">{{ 'resume.skills.implementation.subtitle' | translate }}</span>
+                                            <h4 class="maintitle">{{ 'resume.skills.implementation.title' | translate }}</h4>
                                             <app-skill [img]="'assets/images/svg icons/html-1-icon.svg'"
                                                 [type_img]="'svg-icon'" [skill_name]="'HTML 5'"></app-skill>
                                             <app-skill [img]="'assets/images/svg icons/css-3-icon.svg'"
@@ -122,8 +122,8 @@
                                 <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
                                     <div class="progress-wrapper">
                                         <div class="content">
-                                            <span class="subtitle">Desarrollo y otros</span>
-                                            <h4 class="maintitle">Herramientas y más</h4>
+                                            <span class="subtitle">{{ 'resume.skills.development.subtitle' | translate }}</span>
+                                            <h4 class="maintitle">{{ 'resume.skills.development.title' | translate }}</h4>
                                             <app-skill [img]="'assets/images/svg icons/bootstrap-5-icon.svg'"
                                             [type_img]="'svg-icon'" [skill_name]="'Bootstrap 3/4/5'"></app-skill>
                                             <app-skill [img]="'assets/images/svg icons/nodejs-icon.svg'"
@@ -164,19 +164,18 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-12 mb-5">
-                                    <h5 class="maintitle">Prestaciones y servicios</h5>
+                                    <h5 class="maintitle">{{ 'resume.experienceTab.prestaciones.title' | translate }}</h5>
                                     <div class="content">
-                                        <span class="subtitle">2024 - Presente</span>
-                                        <h4 style="padding: 0px;">TECFIELD</h4>
-                                        <label for="" style="font-size:medium;">*Dentro de la empresa Tecfield desarrollo y lidero proyectos, gestiono y
-                                            defíno estadísticas a las siguientes empresas.</label>
+                                        <span class="subtitle">{{ 'resume.experienceTab.prestaciones.tecfieldPeriod' | translate }}</span>
+                                        <h4 style="padding: 0px;">{{ 'resume.experienceTab.prestaciones.tecfieldCompany' | translate }}</h4>
+                                        <label for="" style="font-size:medium;">{{ 'resume.experienceTab.prestaciones.tecfieldNote' | translate }}</label>
                                         <div class="experience-list">
                                             <!-- Start Single List  -->
                                             <div class="resume-single-list">
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img9.png'"
                                                         [type_img]="'img'"
-                                                        [company_name]="'TecField SRL'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.tecfieldSRL' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -193,7 +192,7 @@
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img10.jpeg'"
                                                         [type_img]="'img'"
-                                                        [company_name]="'O.P.S Oilfield & Production Service'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.opsCompany' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -203,10 +202,9 @@
                                 <!-- Start Skill List Area  -->
                                 <div class="col-lg-6 col-md-12 col-12 pt-3">
                                     <div class="content">
-                                        <span class="subtitle">2020 - 2024</span>
+                                        <span class="subtitle">{{ 'resume.experienceTab.prestaciones.blisterPeriod' | translate }}</span>
                                         <br>
-                                        <label for="" style="font-size:medium;">*Dentro de la empresa Blister Technologies brinde desarrollos, servicios, atención y
-                                            prestaciones a las siguientes empresas.</label>
+                                        <label for="" style="font-size:medium;">{{ 'resume.experienceTab.prestaciones.blisterNote' | translate }}</label>
                                         <div class="experience-list"> 
 
                                             <!-- Start Single List  -->
@@ -214,7 +212,7 @@
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img1.png'"
                                                         [type_img]="'img'"
-                                                        [company_name]="'Blister Technologies'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.blisterTech' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -223,7 +221,7 @@
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img2.png'"
                                                         [type_img]="'img'"
-                                                        [company_name]="'Shell HSE Argentina'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.shellHSE' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -231,7 +229,7 @@
                                             <div class="resume-single-list">
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img3.png'"
-                                                        [type_img]="'img'" [company_name]="'Zille SRL'"></app-company>
+                                                        [type_img]="'img'" [company_name]="'resume.experienceTab.prestaciones.zille' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -240,7 +238,7 @@
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img4.png'"
                                                         [type_img]="'img-xl'"
-                                                        [company_name]="'Calfrac Well Service'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.calfrac' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -260,7 +258,7 @@
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img5.svg'"
                                                         [type_img]="'img'"
-                                                        [company_name]="'Ministerio de Educacion Neuquén'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.ministerio' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -269,7 +267,7 @@
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img6.png'"
                                                         [type_img]="'img-xl'"
-                                                        [company_name]="'Contreras Hermanos SRL'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.contreras' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -277,7 +275,7 @@
                                             <div class="resume-single-list">
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img7.png'"
-                                                        [type_img]="'img'" [company_name]="'Prevensur'"></app-company>
+                                                        [type_img]="'img'" [company_name]="'resume.experienceTab.prestaciones.prevensur' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -286,7 +284,7 @@
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img8.png'"
                                                         [type_img]="'img'"
-                                                        [company_name]="'OldelVal Cass'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.oldelval' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->
@@ -295,7 +293,7 @@
                                                 <div class="inner">
                                                     <app-company [img]="'assets/images/company/img2.png'"
                                                         [type_img]="'img'"
-                                                        [company_name]="'Shell Quality Argentina'"></app-company>
+                                                        [company_name]="'resume.experienceTab.prestaciones.shellQuality' | translate"></app-company>
                                                 </div>
                                             </div>
                                             <!-- End Single List  -->

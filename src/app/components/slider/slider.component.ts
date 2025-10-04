@@ -1,8 +1,10 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import * as feather from 'feather-icons';
 import { MailerService } from '../../services/mailer.service';
+import { TranslationService } from '../../services/translation.service';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
 import { Report } from 'notiflix/build/notiflix-report-aio';
+import { Subscription } from 'rxjs';
 import {
   FormGroup,
   FormControl,
@@ -15,11 +17,18 @@ import {
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css'],
 })
-export class SliderComponent {
+export class SliderComponent implements OnInit, AfterViewInit, OnDestroy {
   para = 'tom.bascal@gmail.com';
   title = 'envioCorreos';
   datos: FormGroup;
-  constructor(private email: MailerService, private fb: FormBuilder) {
+  private langSubscription?: Subscription;
+  
+  constructor(
+    private email: MailerService, 
+    private fb: FormBuilder,
+    private translationService: TranslationService,
+    private cdr: ChangeDetectorRef
+  ) {
     this.datos = this.fb.group({
       nombre: new FormControl('', [Validators.required]),
       correo: new FormControl('', [Validators.required, Validators.email]),
@@ -144,8 +153,20 @@ export class SliderComponent {
     }, tiempoRetraso);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // Suscribirse a cambios de idioma
+    this.langSubscription = this.translationService.currentLang$.subscribe(() => {
+      this.cdr.markForCheck();
+    });
+  }
+  
   ngAfterViewInit() {
     feather.replace(); //Codigo para iniciar los iconos de feather icons
+  }
+
+  ngOnDestroy(): void {
+    if (this.langSubscription) {
+      this.langSubscription.unsubscribe();
+    }
   }
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AnimationComponent } from './footer/animation/animation.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 
 
@@ -10,15 +11,16 @@ import { AnimationComponent } from './footer/animation/animation.component';
   declarations: [
     NavbarComponent,
     FooterComponent,
-    AnimationComponent
+    AnimationComponent,
+    TranslatePipe
   ],
   imports: [
     CommonModule
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
-
+    FooterComponent,
+    TranslatePipe
   ]
 })
 export class SharedModule { }

@@ -23,8 +23,7 @@
             <div class="experience-right">
                 <div class="experience-footer d-flex justify-content-center">
                     <a class="rn-btn" data-bs-toggle="collapse" href="#{{href}}" role="button" aria-expanded="false"
-                        aria-controls="collapseExample"><span>VER
-                            MÁS</span></a>
+                        aria-controls="collapseExample"><span>{{ 'experience.viewMore' | translate }}</span></a>
                 </div>
             </div>
         </div>
@@ -34,30 +33,15 @@
                 <div class="col-11 mt-3 me-auto" style="margin: auto;">
                     <div class="collapse" id="{{href}}">
                         <div class="card card-body p-4" style="border:none">
-                            <h5>Mi rol en la empresa:</h5>
+                            <h5>{{ 'experience.myRole' | translate }}</h5>
                             <ul class="list-group">
-                                <li class="list-group-item"><b> Desarrollador </b>: Actividad Principal. Mi desempeño
-                                    como programador es el
-                                    desarrollo de nuevas implementaciones y mantenimiento en la resolución de las
-                                    necesidades del cliente.</li>
-                                <li class="list-group-item"><b> Lider de proyectos </b>: Hay desarrollos que requieren
-                                    de varios
-                                    participantes de los cuales me encargo de coordinar tareas y desarrollar
-                                    diferentes apartados para luego combinarlos.</li>
-                                <li class="list-group-item"><b>Gestión de los sistemas </b>: Organizo y ordeno el
-                                    entorno del sistema para
-                                    mejor experiencia de usuario.</li>
-                                <li class="list-group-item"><b>Diseño </b>: Encargado de dar aspecto visual.
-                                    (<b>Front-End/UI/UX</b>)</li>
-                                <li class="list-group-item"><b>Arquitectura </b>: Encargado generar la arquitectura y
-                                    maquetado de la base de
-                                    datos, orden de información, crear y consumir APIs. (<b>Back-End/Architecture</b>).
-                                </li>
-                                <li class="list-group-item"><b>Mantenimiento/Soporte </b>: Gestión de Fallos o
-                                    Resolución de Tickets.</li>
-                                <li class="list-group-item"><b>Tareas varias </b>: Generar Documentacion, Entrenar al
-                                    personal nuevo,
-                                    participar en reuniones con los clientes.</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.blister.roles.developer.title' | translate }}</b>: {{ 'experience.companies.blister.roles.developer.description' | translate }}</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.blister.roles.projectLeader.title' | translate }}</b>: {{ 'experience.companies.blister.roles.projectLeader.description' | translate }}</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.blister.roles.systemManagement.title' | translate }}</b>: {{ 'experience.companies.blister.roles.systemManagement.description' | translate }}</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.blister.roles.design.title' | translate }}</b>: {{ 'experience.companies.blister.roles.design.description' | translate }}</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.blister.roles.architecture.title' | translate }}</b>: {{ 'experience.companies.blister.roles.architecture.description' | translate }}</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.blister.roles.support.title' | translate }}</b>: {{ 'experience.companies.blister.roles.support.description' | translate }}</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.blister.roles.miscellaneous.title' | translate }}</b>: {{ 'experience.companies.blister.roles.miscellaneous.description' | translate }}</li>
                             </ul>
                         </div>
                     </div>
@@ -67,21 +51,16 @@
                 <div class="col-11 mt-3" style="margin:auto">
                     <div class="collapse" id="{{href}}">
                         <div class="card card-body p-4" style="border:none">
-                            <h5>Trabajos:</h5>
+                            <h5>{{ 'experience.jobs' | translate }}</h5>
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <b>Clientes propios</b>: Desarrollos para clientes pequeños que tenian que cubrir
-                                    alguna necesidad con programas de cálculo o visuales. (Web/Java)
+                                    <b>{{ 'experience.companies.freelance.roles.ownClients.title' | translate }}</b>: {{ 'experience.companies.freelance.roles.ownClients.description' | translate }}
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Desarrollo Personal</b>: Realicé varias páginas propias para poner a prueba
-                                    tecnologías y patrones de diseño.(MVC/Srcum/Redes de Arboles Binarios)
+                                    <b>{{ 'experience.companies.freelance.roles.personalDevelopment.title' | translate }}</b>: {{ 'experience.companies.freelance.roles.personalDevelopment.description' | translate }}
                                 </li>
-                                <li class="list-group-item"><b>Páginas SAWP</b>: Simple App Web Page, páginas simples
-                                    sin base de datos que sólo muestran información o derivan links.</li>
-                                <li class="list-group-item"><b>Participación activa</b>: Participación activa dentro de
-                                    comunidades de desarrollo web, Cursos relacionados al rubro,
-                                    comunicación con otros informáticos ya graduados o estudiantes.</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.freelance.roles.simplePages.title' | translate }}</b>: {{ 'experience.companies.freelance.roles.simplePages.description' | translate }}</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.freelance.roles.activeParticipation.title' | translate }}</b>: {{ 'experience.companies.freelance.roles.activeParticipation.description' | translate }}</li>
                             </ul>
                         </div>
                     </div>
@@ -91,27 +70,19 @@
                 <div class="col-11 mt-3" style="margin:auto">
                     <div class="collapse" id="{{href}}">
                         <div class="card card-body p-4" style="border:none">
-                            <h5>Desempeños:</h5>
+                            <h5>{{ 'experience.performances' | translate }}</h5>
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <b>Diseño de Base de datos</b>: Una de las materias troncales más importantes de la
-                                    carrera nos enseña cómo son las implementaciones de grandes bases de datos y cómo
-                                    hacer para diseñar una Base de Datos de grandes magnitudes
+                                    <b>{{ 'experience.companies.university.roles.databaseDesign.title' | translate }}</b>: {{ 'experience.companies.university.roles.databaseDesign.description' | translate }}
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Implementación de Estructuras</b>: Diseño de Estructuras de datos y Algoritmos
-                                    complejos como lo son los Arboles AVL(Adelson-Velskii-Landis), Arboles Binarios de
-                                    Decisión (ABD), Grafos etiquetados, Diseño e implementación de Hash abierto y
-                                    cerrado.
+                                    <b>{{ 'experience.companies.university.roles.structureImplementation.title' | translate }}</b>: {{ 'experience.companies.university.roles.structureImplementation.description' | translate }}
                                 </li>
-                                <li class="list-group-item"><b>Programación Orientada a Objetos</b>: Dentro de POO se
-                                    nos enseñó la comunicación entre objetos , en el cual desarrolle un algoritmo para
-                                    SmallTalk - Pharo 9.0 que permite la creación de objetos con atributos y clases
-                                    según la necesidad. Link a <a
+                                <li class="list-group-item"><b>{{ 'experience.companies.university.roles.oop.title' | translate }}</b>: {{ 'experience.companies.university.roles.oop.description' | translate }}
+                                    {{ 'experience.companies.university.roles.oop.link' | translate }} <a
                                         href="https://github.com/TomatoTok/ClassGenerator">Class Generator SmallTalk</a>
                                 </li>
-                                <li class="list-group-item"><b>Cursos y competencias</b>: Participación activa dentro de
-                                    cursos sobre Scrum, Implementación de patrones, Tutorías y otros como Ajedrez</li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.university.roles.coursesAndCompetitions.title' | translate }}</b>: {{ 'experience.companies.university.roles.coursesAndCompetitions.description' | translate }}</li>
 
                             </ul>
                         </div>
@@ -122,27 +93,21 @@
                 <div class="col-11 mt-3" style="margin:auto">
                     <div class="collapse" id="{{href}}">
                         <div class="card card-body p-4" style="border:none">
-                            <h5>Rol en la empresa:</h5>
+                            <h5>{{ 'experience.roleInCompany' | translate }}</h5>
                             <ul class="list-group">
                                  <li class="list-group-item">
-                                    <b>Lider de Proyectos</b>: Desarrollo y Gestion de Sistemas para Seguridad y Medio Ambiente, lidero y encabezo personal para los desarrollos nuevos
-                                    y automatizacion de procesos con formularios, mapas interactivos, reportes estadisticos, validacion y gestion de Documentacion.
+                                    <b>{{ 'experience.companies.tecfield.roles.projectLeader.title' | translate }}</b>: {{ 'experience.companies.tecfield.roles.projectLeader.description' | translate }}
                                     <br>
-                                    Tecnologias como <b>React, NodeJS, GRAPHQL, MongoDB, Docker, AWS, Python, entre otras. </b>
+                                    {{ 'experience.companies.tecfield.roles.projectLeader.technologies' | translate }}
                                 </li>
                                 <hr>
                                 <li class="list-group-item">
-                                    <b>Modelo y estructura interna</b>: Diseño y estructura de los datos a tratar y trabajar, busco implementar
-                                    de manera sencilla la informacion para que sea moldeable pero solida a la vez.
+                                    <b>{{ 'experience.companies.tecfield.roles.internalModel.title' | translate }}</b>: {{ 'experience.companies.tecfield.roles.internalModel.description' | translate }}
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Analisis Estadistico</b>: Graficos y reportes estadisticos gerenciales y profesionales para
-                                    importacion y exportacion de datos visibles para la muestra o exposicion de informacion.
+                                    <b>{{ 'experience.companies.tecfield.roles.statisticalAnalysis.title' | translate }}</b>: {{ 'experience.companies.tecfield.roles.statisticalAnalysis.description' | translate }}
                                 </li>
-                                <li class="list-group-item"><b>Formularios e Ingresos de datos</b>: Creacion de formularios y
-                                    entradas de datos para la carga de informacion en la base de datos y exposicion en graficos estadisticos.
-                                    Interconexion de datos entre diferentes modulos para una integracion completa.
-                                </li>
+                                <li class="list-group-item"><b>{{ 'experience.companies.tecfield.roles.formsAndData.title' | translate }}</b>: {{ 'experience.companies.tecfield.roles.formsAndData.description' | translate }}</li>
                             </ul>
                         </div>
                     </div>
