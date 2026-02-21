@@ -1,6 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, firstValueFrom, throwError } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -8,8 +9,7 @@ import { catchError, firstValueFrom, throwError } from 'rxjs';
 export class MailerService {
   constructor(private Http: HttpClient) {}
 
-  private url = 'https://www.tomasbascal.com/node/';
-  //https://www.tomasbascal.com/
+  private url = environment.apiUrl;
 
   private handleError(error: HttpErrorResponse) {
     return throwError(() => error);
